@@ -137,12 +137,10 @@ const BookPage = () => {
 
     // Save metadata to localStorage
     const books = JSON.parse(localStorage.getItem("books")) || [];
-    const pdfBase64 = doc.output("datauristring");
     books.push({
       title: frontCoverData.title,
       author: frontCoverData.author,
       date: new Date().toLocaleDateString(),
-      pdfBase64,
     });
     localStorage.setItem("books", JSON.stringify(books));
 

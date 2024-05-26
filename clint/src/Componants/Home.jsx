@@ -8,8 +8,6 @@ function Home() {
     setBooks(savedBooks);
   }, []);
 
-  const image = JSON.parse(localStorage.getItem("FrontCoverData"))||[];
-  console.log(image)
   return (
     <div className="p-8">
       <h1 className="text-2xl font-bold mb-4">Downloaded Books</h1>

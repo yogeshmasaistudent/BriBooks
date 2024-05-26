@@ -36,7 +36,9 @@ const BackCover = () => {
   return (
     <div className="mt-[20px] flex">
       <div className="w-[470px] m-auto bg-yellow-100 rounded-[10px] p-[20px]">
-        <h1 className="text-center text-[32px] font-bold">BackCover Of Book</h1>
+        <h1 className="text-center text-[32px] font-bold text-green-700">
+          BackCover Of Book
+        </h1>
         <div className="flex justify-between flex-col p-[20px] gap-[10px]">
           <input
             type="text"
@@ -46,7 +48,7 @@ const BackCover = () => {
             onChange={(e) => setTitle(e.target.value)}
           />
           <div className="flex flex-col gap-[10px]">
-            <p className="p-[5px] font-semibold uppercase">
+            <p className="p-[5px] font-semibold uppercase text-red-700">
               Change the backcover image
             </p>
             <div>
@@ -65,7 +67,7 @@ const BackCover = () => {
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
           />
-          <span className="flex gap-[20px] p-[10px] font-semibold">
+          <span className="flex gap-[20px] p-[10px] font-semibold  text-red-700 ">
             Choose Color For Cover Page
             <input
               className="w-[30px] rounded-[500px] overflow-hidden"

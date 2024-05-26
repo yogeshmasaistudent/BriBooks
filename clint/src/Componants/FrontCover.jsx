@@ -31,8 +31,7 @@ const FrontCover = () => {
   const [fontColor, setFontColor] = useState("#000000");
 
   let imgtemp =
-    "https://img.freepik.com/premium-photo/halloween-monster-demon-skeleton-evil-wizard-embodiment-evil-dark-moon-atmosphere_888396-11639.jpg?w=360";
-
+    "https://www.shutterstock.com/image-illustration/book-cover-page-design-primary-260nw-1736218790.jpg";
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -59,7 +58,9 @@ const FrontCover = () => {
   return (
     <div className="mt-[20px] flex">
       <div className="w-[470px] m-auto bg-yellow-100 rounded-[10px] p-[20px]">
-        <h1 className="text-center text-[32px] font-bold">FRONT PAGE</h1>
+        <h1 className="text-center text-[32px] font-bold text-green-700">
+          FRONT PAGE
+        </h1>
         <div className="flex justify-between flex-col p-[20px] gap-[10px]">
           <input
             type="text"
@@ -69,7 +70,7 @@ const FrontCover = () => {
             onChange={(e) => setTitle(e.target.value)}
           />
           <div className="flex flex-col gap-[10px]">
-            <p className="p-[5px] font-semibold uppercase">
+            <p className="p-[5px] font-semibold uppercase text-red-500">
               Choose Background Image For Front Cover:
             </p>
             <div>
